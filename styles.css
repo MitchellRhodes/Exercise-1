@@ -1,25 +1,25 @@
-/* The light blue background is #e3f1f7 The blue button is #3498db*/
-/* add obnoxious red border to divs to help align them*/
-/*blue background is probably on the body*/
 Body{
     font-family: "Lora";
     background-color: #e3f1f7;
 }
 
 .container{
-    border: 3px solid black;
     width: 400px;
-    height: 400px;
+    height: 450px;
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: white;
+    -moz-box-shadow:    8px 8px 20px 6px #cdd8dd;
+    -webkit-box-shadow: 8px 8px 20px 6px #cdd8dd;
+    box-shadow:         8px 8px 20px 6px #cdd8dd;
 }
 
 .heading{
-    border: 3px solid red;
     text-align: center;
+    height:130px;
+    padding-top: 20px;
 }
 
 h1{
@@ -33,37 +33,13 @@ h2{
 }
 
 .inputs{
-    border: 3px solid red;
     text-align: center;
-}
-
-.button{
-    border: 3px solid red;
-    display: flex;
-    height:145px;
-}
-
-#signIn{
-    background-color: #3498db;
-    color: White;
-    font-weight: bold;
-    width:300px;
-    height:40px;
-}
-
-.lost{
-    text-decoration: none;
-    float:center;
-}
-
-.newUser{
-    text-decoration: none;
 }
 
 #password_input{
     width:300px;
     height: 35px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     border-top: transparent;
     border-left: transparent;
     border-right: transparent;
@@ -73,9 +49,35 @@ h2{
 #email_input{
     width: 300px;
     height:35px;
-    margin: 20px;
+    margin-bottom: 30px;
     border-top: transparent;
     border-left: transparent;
     border-right: transparent;
     border-bottom:1px solid black;
+}
+
+.lost{
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.button{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    height:145px;
+}
+
+#signIn{
+    background-color: #3498db;
+    color: White;
+    font-weight: bold;
+    width:300px;
+    height:40px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.newUser{
+    text-decoration: none;
 }
