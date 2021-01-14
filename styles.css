@@ -36,16 +36,6 @@ h2{
     text-align: center;
 }
 
-#password_input{
-    width:300px;
-    height: 35px;
-    margin-bottom: 30px;
-    border-top: transparent;
-    border-left: transparent;
-    border-right: transparent;
-    border-bottom:1px solid black;
-}
-
 #email_input{
     width: 300px;
     height:35px;
@@ -56,9 +46,22 @@ h2{
     border-bottom:1px solid black;
 }
 
+#password_input{
+    width:300px;
+    height: 35px;
+    margin-bottom: 20px;
+    border-top: transparent;
+    border-left: transparent;
+    border-right: transparent;
+    border-bottom:1px solid black;
+}
+
 .lost{
     text-decoration: none;
-    vertical-align: middle;
+    display: block;
+    position: relative;
+    top: -30px;
+    left: 62px;
 }
 
 .button{
@@ -73,9 +76,10 @@ h2{
     color: White;
     font-weight: bold;
     width:300px;
-    height:40px;
+    height:50px;
     margin-top: 30px;
     margin-bottom: 10px;
+    border:0;
 }
 
 .newUser{
